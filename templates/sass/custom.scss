@@ -1,0 +1,292 @@
+.nulblock .navbar {
+  background-color: #181921;
+  height: 50px;
+}
+
+.navbar-default {
+  background-color: rgba(255, 255, 255, 0.6);
+  /*border-color: rgba(42, 186, 166, 0.9);*/
+  border-bottom: 2px solid #1b1c26;
+  margin: -1px;
+  .navbar-brand {
+    font-size: 26px;
+    color: #1b1c26;
+    &:hover {
+      color: #68cab6;
+      background-color: transparent;
+    }
+  }
+}
+
+/* Button Geo */
+
+.btn-geo {
+  color: #fff;
+  background-color: #FF7F50;
+  border-color: #FF6347;
+  &:hover, &:focus, &:active, &.active {
+    color: #fff;
+    background-color: #FF7F50;
+    border-color: #FF6347;
+  }
+  &:active, &.active {
+    background-image: none;
+  }
+}
+
+.btn-geo-hover:hover {
+  color: #fff;
+  background-color: #FF7F50;
+  border-color: #FF6347;
+}
+
+/* Button Tag */
+
+.btn-tag {
+  color: #fff;
+  background-color: #FFA500;
+  border-color: #FFA500;
+  &:hover, &:focus, &:active, &.active {
+    color: #fff;
+    background-color: #FFA500;
+    border-color: #FFA500;
+  }
+  &:active, &.active {
+    background-image: none;
+  }
+}
+
+.btn-tag-hover:hover {
+  color: #fff;
+  background-color: #FFA500;
+  border-color: #FFA500;
+}
+
+/* Button sign in */
+
+#auth {
+  color: #43cd80;
+  border-color: #43cd80;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+  &:hover, &:focus, &:active {
+    color: #fff;
+    text-shadow: none;
+    background-color: #43cd80;
+    border-color: #43cd80;
+  }
+}
+
+/*_*/
+/* Button sign out */
+
+#notauth {
+  color: #DAA520;
+  border-color: #DAA520;
+  background-color: rgba(255, 255, 255, 0.7);
+  &:hover, &:focus, &:active {
+    color: #fff;
+    text-shadow: none;
+    background-color: #DAA520;
+    border-color: #DAA520;
+  }
+}
+
+/*_*/
+/* END Navigation block*/
+
+/* Second block start */
+
+.navbar-form {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding-left: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-button {
+  /*float: left;*/
+  margin-top: 5px;
+  padding: 10px 20px 10px 20px;
+}
+
+#status {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.btn-default.active > {
+  #geoButton {
+    color: #fff;
+    background-color: #FF6347;
+  }
+  #tagButton {
+    color: #fff;
+    background-color: #ffa500;
+  }
+}
+
+/* END Button geo/tag */
+
+/* Button inside second block */
+
+.form-control {
+  height: 40px;
+}
+
+#searchButtonGeo {
+  height: 40px;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #FF6347;
+}
+
+#searchButtonTag {
+  height: 40px;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #FFA500;
+}
+
+#popularLoc {
+  padding-right: 35px;
+}
+
+#popularTag {
+  margin-top: 50px;
+}
+
+.button-popularLoc {
+  height: 30px;
+  font-size: 13px;
+  margin: 2px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  color: #fff;
+  border-color: rgba(255, 99, 71, 0.7);
+  background-color: #1b1c26;
+}
+
+.button-popular-tag {
+  height: 30px;
+  font-size: 13px;
+  margin: 2px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  color: #fff;
+  border-color: rgba(255, 165, 0, 0.7);
+  background-color: #1b1c26;
+}
+
+.button-popularLoc:hover {
+  color: #FF6347;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  background-color: #fff;
+}
+
+.button-popular-tag:hover {
+  color: #FF7F50;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  background-color: white;
+}
+
+.popularLocTitle {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  padding-right: 15px;
+  i {
+    margin-top: 25px;
+    font-size: 24px;
+    color: #FF6347;
+  }
+}
+
+/* Background */
+
+.block_second {
+  margin-top: 52px;
+  border-top-style: solid;
+  border-color: #FF7F50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #1b1c26;
+}
+
+/* END Second block */
+
+/* Start Third block*/
+
+.third_block {
+  padding: 50px 0 50px 0;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1) inset;
+  background-color: #dde7eb;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  border: solid #fff;
+  border-radius: 0;
+  -webkit-box-shadow: 4px 4px 0 0 #cdd8dd;
+  box-shadow: 4px 4px 0 0 #cdd8dd;
+  &.hover {
+    display: inline-block;
+  }
+}
+
+#buttonMore {
+  margin-bottom: 50px;
+}
+
+.thumbnail-map-canvas {
+  display: block;
+  border: 6px solid #fff;
+  border-radius: 0;
+  /*-webkit-box-shadow: 4px 4px 0 0 #cdd8dd;*/
+  box-shadow: 4px 4px 0 0 rgba(255, 99, 71, 0.5);
+}
+
+/* END Third block */
+
+/* Spinners */
+/* http://tobiasahlin.com/spinkit */
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  margin-right: 10px;
+  /*margin: 100px auto;*/
+  -webkit-animation: rotateplane 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% {
+    -webkit-transform: perspective(25px);
+  }
+  25% {
+    -webkit-transform: perspective(25px) rotateX(180deg);
+  }
+  50% {
+    -webkit-transform: perspective(25px) rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: perspective(25px) rotateX(360deg) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(25px) rotateX(360deg) rotateY(0deg);
+  }
+}

@@ -1,0 +1,115 @@
+doctype html
+html[lang="en"]
+  head
+    meta[content="text/html; charset=utf-8"]
+    title
+      | Lookaround
+    script[type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"]
+    script[type="text/javascript" src="vendor/js/jquery.cookie.js"]
+    script[type="text/javascript" src="vendor/js/holder.js"]
+
+    link[rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css"]
+    link[rel="stylesheet" type="text/css" href="vendor/css/navbar.css"]
+    link[rel="stylesheet" type="text/css" href="css/googlemaps.css"]
+    link[href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"]
+    link[rel="stylesheet" type="text/css" href="css/hover_effect.css"]
+    link[rel="stylesheet" type="text/css" href="css/custom.css"]
+    link[rel="stylesheet" type="text/css" href="css/custom_style_headroom.css"]
+
+    script[type="text/javascript" src="vendor/js/headroom.min.js"]
+    script[type="text/javascript" src="vendor/js/jQuery.headroom.js"]
+    script[type="text/javascript" src="js/my_headroom.js"]
+    script[type="text/javascript" src="js/query_strings.js"]
+    script[type="text/javascript" src="vendor/js/bootstrap.min.js"]
+    script[type="text/javascript" src="js/main.js"]
+    script[type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"]
+    script[type="text/javascript" src="js/googlemaps.js"]
+
+  body
+    nav.navbar.navbar-default[role="navigation"]
+      .container
+        .navbar-header
+          a.navbar-brand[href="#"]
+            | Look around slim
+        .navbar-right
+          .btn-group
+            button#geoButton.btn.navbar-btn.btn-geo.active[type="button"]
+              | Geo
+            button#tagButton.btn.navbar-btn.btn-default.btn-tag-hover[type="button"]
+              | Tag
+          button#auth.btn.btn-default.navbar-btn[type="button" onclick="window.location.href='https://instagram.com/oauth/authorize/?response_type=token&client_id=c183f234342f4b3f886b620f7cc2f861&redirect_uri=http://188.168.244.14:8001'"]
+            | Sign in to see photos
+          button#notauth.btn.btn-default.navbar-btn[type="button" style="display: none"]
+            | Sign out
+    .block_second
+      .container
+        .row
+          .col-md-4
+            form#searchForm.navbar-form.navbar-left[role="search"]
+              h3#status
+                | Planet Earth
+              #formGeo.input-group
+                input#searchTextGeo.form-control[type="text" placeholder="Enter a location"]
+                span.input-group-btn
+                  button#searchButtonGeo.btn[type="button"]
+                    | Go!
+              #formTag.input-group[style="display: none"]
+                input#searchTextTag.form-control[type="text" placeholder="Enter a tag"]
+                span.input-group-btn
+                  button#searchButtonTag.btn[type="button"]
+                    | Go!
+            div
+              .popularLocTitle
+                i.fa.fa-flag
+                |  Popular locations
+              #popularLoc
+          .col-md-8
+            #map-canvas.thumbnail-map-canvas
+            #popularTag[style="display: none"]
+
+    .third_block
+      .container
+        #photos
+          .row.pics
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+          .row.pics
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+            .col-md-2
+              a.thumbnail[href="#"]
+                img[data-src="holder.js/100%x150" alt="..."]
+        ul.pager
+
+        .col-md-12.text-center
+          button#buttonMore.next.btn.btn-default[type="button" style="display: none"]
+            | More
